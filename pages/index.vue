@@ -1,78 +1,33 @@
 <template>
   <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        satyawikananda
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+    <section class="text-white body-font">
+      <div class="container mx-auto flex py-2 py-12 items-center justify-center flex-col">
+        <img class="lg:w-1/4 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded-full" alt="hero" src="https://avatars1.githubusercontent.com/u/33148052?v=4">
+        <div class="text-center lg:w-2/3 w-full">
+          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-bold" :style="{ color: '#ff8906' }">
+            Hi, Satya Wikananda here 👋
+          </h1>
+          <p class="mb-8 leading-relaxed">
+            Hello there, my full name is <span class="font-bold" :style="{ color: '#ff8906' }">I Gusti Ngurah Satya Wikananda</span>, and people who's know me call me <span class="font-bold" :style="{ color: '#ff8906' }">Satya (19)</span>. For now, I live in Denpasar, Bali and I am working at software house based on Bali as a Web developer. Wanna know about me? click this button below 😊
+          </p>
+          <div class="flex justify-center">
+            <nuxt-link to="/about">
+              <button class="bg-transparent btn-about hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                About me
+              </button>
+            </nuxt-link>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  name: 'Homepage',
+  head: {
+    title: 'Satya Wikananda | Home'
+  }
+}
 </script>
-
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>

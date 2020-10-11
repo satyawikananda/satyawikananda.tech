@@ -1,0 +1,44 @@
+@import './helpers/margin.scss';
+@import './helpers/padding.scss';
+@import './helpers/text.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin:0;
+  padding:0;
+  line-height: 1.5;
+  background-color: #242933;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.btn-about {
+  border: 1px solid #ff8906;
+  color: #fffffe;
+  transition: all 0.3s ease;
+  &:hover {
+    border: 1px solid #ff8906;
+    background-color: #ff8906;
+  }
+}
+
+.card-about {
+  background-color: #2e3440;
+}
+
+.footer {
+  background-color: #3B4252;
+}

@@ -1,0 +1,29 @@
+<template>
+  <footer class="footer text-white body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center flex-col">
+      <p class="flex title-font text-md font-medium items-center md:justify-start justify-center text-white">
+        Made Using <span class="font-bold" :style="{ color: '#ff8906' }">&nbsp;Nuxt.js</span>,&nbsp;<span class="font-bold" :style="{ color: '#ff8906' }">Tailwind CSS </span>&nbsp;and hosted on <span class="font-bold" :style="{ color: '#ff8906' }">&nbsp;Vercel</span>
+      </p>
+      <p class="text-md sm:ml-4 sm:pl-4 sm:py-2 sm:mt-0 mt-4">
+        <a href="https://twitter.com/satya_wikananda" class="ml-1" rel="noopener noreferrer" target="_blank" :style="{ color: '#ff8906' }">&copy; {{ new Date().getFullYear() }} Satya Wikananda</a>
+      </p>
+      <div class="flex flex-row container justify-center">
+        <social-media :icons="['fab', 'github']" link="https://github.com/satyawikananda" />
+        <social-media :icons="['fab', 'instagram']" link="https://instagram.com/satyawikananda" />
+        <social-media :icons="['fab', 'facebook']" link="https://facebook.com/satyawikananda23" />
+        <social-media :icons="['fab', 'telegram']" link="https://t.me/satyawikananda" />
+        <social-media :icons="['fab', 'twitter']" link="https://twitter.com/satya_wikananda" />
+      </div>
+    </div>
+  </footer>
+</template>
+<script>
+import SocialMedia from '@/components/SocialMedia.vue'
+
+export default {
+  name: 'Footer',
+  components: {
+    'social-media': SocialMedia
+  }
+}
+</script>
