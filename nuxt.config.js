@@ -14,6 +14,7 @@ export default {
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
+    '@/assets/scss/index.scss'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
@@ -28,16 +29,27 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    // Font awesome config
+    '@nuxtjs/fontawesome'
   ],
 
   /*
     Tailwind CSS configuration
   */
-
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',
     configPath: 'tailwind.config.css'
+  },
+
+  /*
+    Font awesome configuration
+  */
+  fontawesome: {
+    icons: {
+      solid: true,
+      brands: true
+    }
   },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
