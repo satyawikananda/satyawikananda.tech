@@ -1,0 +1,124 @@
+{
+  "frontend": [
+    {
+      "id": 1,
+      "name": "HTML",
+      "svg": "~/assets/svg/html.svg"
+    },
+    {
+      "id": 2,
+      "name": "CSS",
+      "svg": "~/assets/svg/css.svg"
+    },
+    {
+      "id": 3,
+      "name": "Vue.js",
+      "svg": "~/assets/svg/vue.svg"
+    },
+    {
+      "id": 4,
+      "name": "Nuxt.js",
+      "svg": "~/assets/svg/nuxt.svg"
+    },
+    {
+      "id": 5,
+      "name": "Bootstrap",
+      "svg": "~/assets/svg/bs.svg"
+    },
+    {
+      "id": 6,
+      "name": "Tailwind",
+      "svg": "~/assets/svg/tailwind.svg"
+    }
+  ],
+  "backend": [
+    {
+      "id": 1,
+      "name": "Laravel",
+      "svg": "~/assets/svg/laravel.svg"
+    },
+    {
+      "id": 2,
+      "name": "Express Js",
+      "svg": "~/assets/svg/express.svg"
+    },
+    {
+      "id": 3,
+      "name": "Firebase",
+      "svg": "~/assets/svg/firebase.svg"
+    }
+  ],
+  "languages": [
+    {
+      "id": 1,
+      "name": "Javascript",
+      "svg": "~/assets/svg/js.svg"
+    },
+    {
+      "id": 2,
+      "name": "Typescript",
+      "svg": "~/assets/svg/ts.svg"
+    },
+    {
+      "id": 3,
+      "name": "PHP",
+      "svg": "~/assets/svg/php.svg"
+    }
+  ],
+  "tools": [
+    {
+      "id": 1,
+      "name": "Visual Studio Code",
+      "svg": "~/assets/svg/vscode.svg"
+    },
+    {
+      "id": 2,
+      "name": "Git",
+      "svg": "~/assets/svg/git.svg"
+    },
+    {
+      "id": 3,
+      "name": "Github",
+      "svg": "~/assets/svg/github.svg"
+    },
+    {
+      "id": 4,
+      "name": "Gitlab",
+      "svg": "~/assets/svg/gitlab.svg"
+    }
+  ],
+  "infrastructures": [
+    {
+      "id": 1,
+      "name": "Vercel",
+      "svg": "~/assets/svg/vercel.svg"
+    },
+    {
+      "id": 2,
+      "name": "Firebase hosting",
+      "svg": "~/assets/svg/firebase.svg"
+    },
+    {
+      "id": 3,
+      "name": "Github pages",
+      "svg": "~/assets/svg/github.svg"
+    }
+  ],
+  "rarely": [
+    {
+      "id": 1,
+      "name": "React JS",
+      "svg": "~/assets/svg/react.svg"
+    },
+    {
+      "id": 2,
+      "name": "Svelte JS",
+      "svg": "~/assets/svg/svelte.svg"
+    },
+    {
+      "id": 3,
+      "name": "Deno",
+      "svg": "~/assets/svg/deno.svg"
+    }
+  ]
+}
