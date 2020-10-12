@@ -9,6 +9,9 @@
         <nuxt-link to="/about" class="mr-5 cursor-pointer text-white-semi hover:underline">
           About me
         </nuxt-link>
+        <nuxt-link to="/accomplishments" class="mr-5 cursor-pointer text-white-semi hover:underline">
+          Accomplishments
+        </nuxt-link>
       </nav>
       <social-media :icons="['fab', 'github']" link="https://github.com/satyawikananda" />
       <social-media :icons="['fab', 'telegram']" link="https://t.me/satyawikananda" />
