@@ -122,6 +122,9 @@ export default {
   async asyncData ({ req }) {
     const skills = await getSkills()
     return { skills }
+  },
+  head: {
+    title: 'Satya Wikananda | About me'
   }
 }
 </script>
