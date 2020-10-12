@@ -14,8 +14,11 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/firebase": "^6.1.1",
     "@nuxtjs/pwa": "^3.0.2",
     "core-js": "^3.6.5",
+    "firebase": "^7.23.0",
     "node-sass": "^4.14.1",
     "nuxt": "^2.14.5",
     "sass-loader": "^10.0.3"

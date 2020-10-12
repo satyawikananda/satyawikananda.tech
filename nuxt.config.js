@@ -31,7 +31,32 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     // Font awesome config
-    '@nuxtjs/fontawesome'
+    '@nuxtjs/fontawesome',
+    // Env module
+    '@nuxtjs/dotenv',
+    // Firebase module
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: process.env.FIREBASE_APIKEY,
+          authDomain: 'satyawikanandaportfolio.firebaseapp.com',
+          databaseURL: 'https://satyawikanandaportfolio.firebaseio.com',
+          projectId: process.env.FIREBASE_PROJECTID,
+          storageBucket: 'satyawikanandaportfolio.appspot.com',
+          messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+          appId: process.env.FIREBASE_APP_ID,
+          measurementId: process.env.FIREBASE_MEASUREMENT_ID
+        },
+        services: {
+          firestore: true,
+          messaging: true,
+          performance: true,
+          analytics: true,
+          remoteConfig: true
+        }
+      }
+    ]
   ],
 
   /*
