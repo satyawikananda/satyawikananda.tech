@@ -10,10 +10,10 @@
                 Hi, Satya Wikananda here 👋
               </h1>
               <p class="mb-8 leading-relaxed text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium et ullam vitae amet voluptatibus illum officiis dolore mollitia earum cum voluptates rem voluptatem, reprehenderit vel odit quis voluptatum totam non hic? Iure eum suscipit fugiat labore, necessitatibus sint at quo deserunt rem ea a dolores nobis dolorem. Beatae perferendis aliquam consequatur soluta ex aperiam dignissimos harum itaque est ducimus voluptatibus voluptatem deserunt repellendus illum, sapiente deleniti cupiditate rem praesentium consectetur voluptatum suscipit sequi placeat ad. Veritatis nemo dolorem eius, temporibus tenetur earum consequatur illum fugit minus iure? Culpa magni vel quae amet suscipit ad similique tempora molestias? Odio, debitis inventore.
+                Hello there, my full name is <span class="font-bold" :style="{ color: '#ff8906' }">I Gusti Ngurah Satya Wikananda</span>, and people who's know me call me <span class="font-bold" :style="{ color: '#ff8906' }">Satya (19)</span>. For now, I live in Denpasar, Bali and I am working at software house based on Bali as a Web developer. I am a vocational high school graduates in <a class="hover:underline" :style="{ color: '#ff8906' }" href="https://www.smkn1denpasar.sch.id/" target="_blank">SMK Negeri 1 Denpasar</a> with a major in software engineering. I Love make something that useful for the others like make an application website and i am prefer in Frontend website development using Vue Js or Nuxt Js, and until now, i am still learning, because everyday the technologies is continues to develop.
               </p>
               <p class="leading-relaxed text-center mb-2">
-                You can reach me in :
+                My social media account, lets connect with me :
               </p>
               <div class="flex flex-row container justify-center">
                 <social-media :icons="['fab', 'github']" link="https://github.com/satyawikananda" />
@@ -28,23 +28,79 @@
         <div class="flex flex-wrap justify-center">
           <div class="p-4 lg:w-full">
             <div class="h-full card-about shadow-md px-8 pt-16 pb-24 rounded-lg overflow-hidden relative">
-              <h2 class="text-left title-skills title-font text-3xl font-bold text-left py-2 mb-8">
+              <h2 class="text-left title-skills title-font text-3xl font-bold py-2 mb-8">
                 My Skills and knowledge based
               </h2>
-              <h5 class="mb-4 title-font text-lg font-medium">
+              <h5 class="mb-4 ml-4 title-font text-lg font-medium">
                 Languages
               </h5>
-              <div class="flex flex-wrap -m-4">
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-                  test
-                </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-                  test
-                </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-                  test
+              <!-- Languages list -->
+              <div class="flex flex-wrap">
+                <div v-for="data in skills.languages" :key="data.id" class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                  <card-skill :svg="data.svg" :name="data.name" />
                 </div>
               </div>
+              <!-- End languages -->
+              <!-- Frontend list -->
+              <h5 class="mb-4 ml-4 title-font text-lg font-medium">
+                Frontend
+              </h5>
+              <div class="flex flex-wrap">
+                <div v-for="data in skills.frontend" :key="data.id" class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                  <card-skill :svg="data.svg" :name="data.name" />
+                </div>
+              </div>
+              <!-- End frontend -->
+              <!-- Backend list -->
+              <h5 class="mb-4 ml-4 title-font text-lg font-medium">
+                Backend
+              </h5>
+              <div class="flex flex-wrap">
+                <div v-for="data in skills.backend" :key="data.id" class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                  <card-skill :svg="data.svg" :name="data.name" />
+                </div>
+              </div>
+              <!-- End backend -->
+              <!-- Tools list -->
+              <h5 class="mb-4 ml-4 title-font text-lg font-medium">
+                Tools
+              </h5>
+              <div class="flex flex-wrap">
+                <div v-for="data in skills.tools" :key="data.id" class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                  <card-skill :svg="data.svg" :name="data.name" />
+                </div>
+              </div>
+              <!-- End tools -->
+              <!-- Tools list -->
+              <h5 class="mb-4 ml-4 title-font text-lg font-medium">
+                Infrastructures
+              </h5>
+              <div class="flex flex-wrap">
+                <div v-for="data in skills.infrastructures" :key="data.id" class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                  <card-skill :svg="data.svg" :name="data.name" />
+                </div>
+              </div>
+              <!-- End tools -->
+              <!-- rarely list -->
+              <h5 class="mb-4 ml-4 title-font text-lg font-medium">
+                Tried but rarely
+              </h5>
+              <div class="flex flex-wrap">
+                <div v-for="data in skills.rarely" :key="data.id" class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                  <card-skill :svg="data.svg" :name="data.name" />
+                </div>
+              </div>
+              <!-- End rarely -->
+              <!-- current list -->
+              <h5 class="mb-4 ml-4 title-font text-lg font-medium">
+                Currently learning
+              </h5>
+              <div class="flex flex-wrap">
+                <div v-for="data in skills.current" :key="data.id" class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                  <card-skill :svg="data.svg" :name="data.name" />
+                </div>
+              </div>
+              <!-- End current -->
             </div>
           </div>
         </div>
@@ -54,8 +110,19 @@
 </template>
 
 <script>
+import CardSkill from '@/components/card/CardSkill.vue'
+
+const getSkills = () => import('~/static/skills.json').then(m => m.default)
+
 export default {
-  name: 'Aboutme'
+  name: 'Aboutme',
+  components: {
+    'card-skill': CardSkill
+  },
+  async asyncData ({ req }) {
+    const skills = await getSkills()
+    return { skills }
+  }
 }
 </script>
 
