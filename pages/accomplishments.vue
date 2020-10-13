@@ -11,17 +11,17 @@
               <p class="leading-relaxed">
                 There is some projects i ever created and projects open source are included
               </p>
-              <div class="flex flex-wrap">
-                <!-- <div v-for="(item, i) in datas" :key="i" class="lg:w-2/4 md:w-1/2 p-4 w-full">
-                  <card-skill
+              <div class="flex flex-wrap justify-center">
+                <div v-for="(item, i) in data" :key="i" class="lg:w-2/4 md:w-1/2 p-4 w-full">
+                  <card-project
                     :title="item.name"
                     :image="item.image"
                     :description="item.description"
-                    :tech-stack="item.techStack"
+                    :tech-stack="item.tech_stack.join(', ')"
                     :github="item.github"
                     :url="item.url"
                   />
-                </div> -->
+                </div>
               </div>
             </div>
           </div>
@@ -32,21 +32,25 @@
 </template>
 
 <script>
-// import CardSkill from '@/components/card/CardSkill.vue'
+import CardProject from '@/components/card/CardProject.vue'
 
 export default {
   name: 'Accomplishments',
-  // components: {
-  //   'card-skill': CardSkill
-  // },
-  async asyncData ({ app, params, error }) {
-    const docRef = app.$fireStore.collection('projects')
+  components: {
+    'card-project': CardProject
+  },
+  data () {
+    return {
+      data: []
+    }
+  },
+  async mounted () {
+    const docRef = this.$fireStore.collection('projects')
     try {
       await docRef.onSnapshot((res) => {
         res.forEach((doc) => {
           const data = doc.data()
-          const techStack = data.tech_stack.join(', ')
-          return { data, techStack }
+          this.data.push(data)
         })
       })
     } catch (e) {
