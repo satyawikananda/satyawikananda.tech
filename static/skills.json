@@ -12,23 +12,38 @@
     },
     {
       "id": 3,
+      "name": "SCSS",
+      "svg": "/svg/sass.svg"
+    },
+    {
+      "id": 4,
       "name": "Vue.js",
       "svg": "/svg/vue.svg"
     },
     {
-      "id": 4,
+      "id": 5,
       "name": "Nuxt.js",
       "svg": "/svg/nuxt.svg"
     },
     {
-      "id": 5,
+      "id": 6,
       "name": "Bootstrap",
       "svg": "/svg/bs.svg"
     },
     {
-      "id": 6,
+      "id": 7,
       "name": "Tailwind",
       "svg": "/svg/tailwind.svg"
+    },
+    {
+      "id": 8,
+      "name": "Vuetify",
+      "svg": "/svg/Vuetify.svg"
+    },
+    {
+      "id": 9,
+      "name": "Vuesax",
+      "svg": "/svg/vuesax.svg"
     }
   ],
   "backend": [
