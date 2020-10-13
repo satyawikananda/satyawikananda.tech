@@ -29,13 +29,13 @@
           <div class="p-4 lg:w-full">
             <div class="h-full card-about shadow-md px-8 pt-16 pb-24 rounded-lg overflow-hidden relative">
               <h2 class="text-left title-skills title-font text-3xl font-bold py-2 mb-8">
-                My Skills and knowledge based
+                My basic skills and knowledge
               </h2>
               <h5 class="mb-4 ml-4 title-font text-lg font-medium">
                 Languages
               </h5>
               <!-- Languages list -->
-              <div class="flex flex-wrap">
+              <div class="flex flex-wrap justify-center">
                 <div v-for="data in skills.languages" :key="data.id" class="lg:w-1/4 md:w-1/2 p-4 w-full">
                   <card-skill :svg="data.svg" :name="data.name" />
                 </div>
@@ -45,7 +45,7 @@
               <h5 class="mb-4 ml-4 title-font text-lg font-medium">
                 Frontend
               </h5>
-              <div class="flex flex-wrap">
+              <div class="flex flex-wrap justify-center">
                 <div v-for="data in skills.frontend" :key="data.id" class="lg:w-1/4 md:w-1/2 p-4 w-full">
                   <card-skill :svg="data.svg" :name="data.name" />
                 </div>
@@ -55,7 +55,7 @@
               <h5 class="mb-4 ml-4 title-font text-lg font-medium">
                 Backend
               </h5>
-              <div class="flex flex-wrap">
+              <div class="flex flex-wrap justify-center">
                 <div v-for="data in skills.backend" :key="data.id" class="lg:w-1/4 md:w-1/2 p-4 w-full">
                   <card-skill :svg="data.svg" :name="data.name" />
                 </div>
@@ -65,7 +65,7 @@
               <h5 class="mb-4 ml-4 title-font text-lg font-medium">
                 Tools
               </h5>
-              <div class="flex flex-wrap">
+              <div class="flex flex-wrap justify-center">
                 <div v-for="data in skills.tools" :key="data.id" class="lg:w-1/4 md:w-1/2 p-4 w-full">
                   <card-skill :svg="data.svg" :name="data.name" />
                 </div>
@@ -75,7 +75,7 @@
               <h5 class="mb-4 ml-4 title-font text-lg font-medium">
                 Infrastructures
               </h5>
-              <div class="flex flex-wrap">
+              <div class="flex flex-wrap justify-center">
                 <div v-for="data in skills.infrastructures" :key="data.id" class="lg:w-1/4 md:w-1/2 p-4 w-full">
                   <card-skill :svg="data.svg" :name="data.name" />
                 </div>
@@ -85,7 +85,7 @@
               <h5 class="mb-4 ml-4 title-font text-lg font-medium">
                 Tried but rarely
               </h5>
-              <div class="flex flex-wrap">
+              <div class="flex flex-wrap justify-center">
                 <div v-for="data in skills.rarely" :key="data.id" class="lg:w-1/4 md:w-1/2 p-4 w-full">
                   <card-skill :svg="data.svg" :name="data.name" />
                 </div>
@@ -95,7 +95,7 @@
               <h5 class="mb-4 ml-4 title-font text-lg font-medium">
                 Currently learning
               </h5>
-              <div class="flex flex-wrap">
+              <div class="flex flex-wrap justify-center">
                 <div v-for="data in skills.current" :key="data.id" class="lg:w-1/4 md:w-1/2 p-4 w-full">
                   <card-skill :svg="data.svg" :name="data.name" />
                 </div>
