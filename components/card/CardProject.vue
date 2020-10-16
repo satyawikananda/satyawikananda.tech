@@ -1,7 +1,7 @@
 <template>
   <div class="h-full card-skills shadow-md rounded-lg overflow-hidden relative p-8 flex flex-wrap flex-col items-center justify-center">
     <div v-lazy-container="{ selector: 'img' }">
-      <img :data-src="image" :alt="title" class="lg:h-48 md:h-36 w-full object-cover rounded-md mb-4">
+      <img :data-src="image" :alt="title" class="lg:w-full h-auto md:w-full mb-5 rounded object-cover object-center mx-auto">
     </div>
     <p class="text-lg md:text-lg text-center font-bold mb-2" :style="{ color: '#ff8906' }">
       {{ title }}

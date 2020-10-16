@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="max-w-full m-auto">
     <section class="text-white body-font">
       <div class="container mx-auto flex py-2 py-12 items-center justify-center flex-col">
         <div class="flex flex-wrap justify-center">
@@ -8,11 +8,11 @@
               <h2 class="text-left title-project title-font text-3xl font-bold py-2 mb-4">
                 My Projects
               </h2>
-              <p class="leading-relaxed">
+              <p class="leading-relaxed sm:text-center md:text-left">
                 There is some projects i ever created and projects open source are included
               </p>
               <div class="flex flex-wrap justify-center">
-                <div v-for="(item, i) in data" :key="i" class="lg:w-2/4 md:w-1/2 p-4 w-full">
+                <div v-for="(item, i) in data" :key="i" class="lg:w-2/4 md:w-1/2 p-1 mt-4 w-full">
                   <card-project
                     :title="item.name"
                     :image="item.image"

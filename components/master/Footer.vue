@@ -1,8 +1,8 @@
 <template>
   <footer class="footer text-white body-font">
     <div class="container px-5 py-8 mx-auto flex items-center flex-col">
-      <p class="flex title-font text-md font-medium items-center md:justify-start justify-center text-white">
-        Made Using <span class="font-bold" :style="{ color: '#ff8906' }">&nbsp;Nuxt.js</span>,&nbsp;<span class="font-bold" :style="{ color: '#ff8906' }">Tailwind CSS </span>&nbsp;and hosted on <span class="font-bold" :style="{ color: '#ff8906' }">&nbsp;Vercel</span>
+      <p class="title-font text-md font-medium text-center text-white">
+        Made Using Nuxt.js, Tailwind CSS and hosted on Vercel
       </p>
       <p class="text-md sm:ml-4 sm:pl-4 sm:py-2 sm:mt-0 mt-4">
         <a href="https://twitter.com/satya_wikananda" class="ml-1" rel="noopener noreferrer" target="_blank" :style="{ color: '#ff8906' }">&copy; {{ new Date().getFullYear() }} Satya Wikananda</a>
