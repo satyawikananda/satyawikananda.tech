@@ -2,7 +2,7 @@
   <header class="text-white body-font">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
       <span class="text-xl ml-3 font-bold" :style="{ color: '#ff8906' }">Satya Wikananda</span>
-      <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-gray-400 flex flex-wrap items-center text-base justify-center sm:hidden md:hidden lg:block">
+      <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-gray-400 flex flex-wrap items-center text-base justify-center hidden md:block">
         <nuxt-link to="/" class="mr-5 cursor-pointer text-white-semi hover:underline">
           Home
         </nuxt-link>
@@ -13,9 +13,11 @@
           Accomplishments
         </nuxt-link>
       </nav>
-      <social-media :icons="['fab', 'github']" link="https://github.com/satyawikananda" />
-      <social-media :icons="['fab', 'telegram']" link="https://t.me/satyawikananda" />
-      <social-media :icons="['fab', 'twitter']" link="https://twitter.com/satya_wikananda" />
+      <div class="flex items-center">
+        <social-media :icons="['fab', 'github']" link="https://github.com/satyawikananda" />
+        <social-media :icons="['fab', 'telegram']" link="https://t.me/satyawikananda" />
+        <social-media :icons="['fab', 'twitter']" link="https://twitter.com/satya_wikananda" />
+      </div>
     </div>
   </header>
 </template>
