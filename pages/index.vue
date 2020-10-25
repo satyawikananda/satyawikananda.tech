@@ -27,7 +27,14 @@
 export default {
   name: 'Homepage',
   head: {
-    title: 'Satya Wikananda | Home'
+    title: 'Satya Wikananda | Home',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Hi there, Satya wikananda here, wanna know me? check in here'
+      }
+    ]
   }
 }
 </script>

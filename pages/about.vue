@@ -124,7 +124,14 @@ export default {
     return { skills }
   },
   head: {
-    title: 'Satya Wikananda | About me'
+    title: 'Satya Wikananda | About me',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Want to know about me? check in here, and touch me in my social media'
+      }
+    ]
   }
 }
 </script>

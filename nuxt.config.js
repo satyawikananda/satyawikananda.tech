@@ -5,7 +5,8 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { name: 'keywords', content: 'satyawikananda, Satya Wikananda, portfolio nuxt js, I Gusti Ngurah Satya Wikananda, satya, wikananda, portfolio website' },
+      { hid: 'description', name: 'description', content: "Satya Wikananda's portfolio, if you want to know me more, you can check it here" }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

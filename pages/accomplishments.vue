@@ -58,7 +58,14 @@ export default {
     }
   },
   head: {
-    title: 'Satya Wikananda | Accomplishments'
+    title: 'Satya Wikananda | Accomplishments',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'This is my accomplishments stuff, you can see my projects and anything else here'
+      }
+    ]
   }
 }
 </script>
