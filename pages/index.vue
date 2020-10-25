@@ -1,8 +1,8 @@
 <template>
   <div class="max-w-full m-auto">
     <section class="text-white body-font">
-      <div class="container mx-auto flex py-2 py-12 items-center justify-center flex-col">
-        <img class="lg:w-1/4 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded-full" alt="hero" src="https://avatars1.githubusercontent.com/u/33148052?v=4">
+      <div class="container mx-auto flex py-8 items-center justify-center flex-col">
+        <img class="lg:w-1/4 md:w-2/6 w-3/6 mb-10 object-cover object-center rounded-full" alt="hero" src="https://avatars1.githubusercontent.com/u/33148052?v=4">
         <div class="text-center lg:w-2/3 w-full">
           <h1 class="title-font sm:text-4xl text-3xl mb-4 font-bold" :style="{ color: '#ff8906' }">
             Hi, Satya Wikananda here 👋

@@ -4,8 +4,8 @@
       <p class="title-font text-md font-medium text-center text-white">
         Made Using Nuxt.js, Tailwind CSS and hosted on Vercel
       </p>
-      <p class="text-md sm:ml-4 sm:pl-4 sm:py-2 sm:mt-0 mt-4">
-        <a href="https://twitter.com/satya_wikananda" class="ml-1" rel="noopener noreferrer" target="_blank" :style="{ color: '#ff8906' }">&copy; {{ new Date().getFullYear() }} Satya Wikananda</a>
+      <p class="text-md sm:py-2 sm:mt-0 mt-4">
+        <a href="https://twitter.com/satya_wikananda" class="text-center" rel="noopener noreferrer" target="_blank" :style="{ color: '#ff8906' }">&copy; {{ new Date().getFullYear() }} Satya Wikananda</a>
       </p>
       <div class="flex flex-row container justify-center">
         <social-media :icons="['fab', 'github']" link="https://github.com/satyawikananda" />
