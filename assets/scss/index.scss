@@ -1,8 +1,14 @@
 @import './helpers/margin.scss';
 @import './helpers/padding.scss';
 @import './helpers/text.scss';
+@import './helpers/font.scss';
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+:root {
+  --primary: #ff8906;
+  --bg-primary: #242933;
+  --bg-secondary: #3B4252;
+  --bg-card: #2e3440;
+}
 
 *{
   margin: 0;
@@ -15,7 +21,7 @@ body {
   margin:0;
   padding:0;
   line-height: 1.5;
-  background-color: #242933;
+  background-color: var(--bg-primary);
 }
 
 .container {
@@ -26,25 +32,14 @@ body {
 }
 
 .btn-about {
-  border: 1px solid #ff8906;
+  border: 1px solid var(--primary);
   color: #fffffe;
   transition: all 0.3s ease;
   &:hover {
-    border: 1px solid #ff8906;
-    background-color: #ff8906;
+    border: 1px solid var(--primary);
+    background-color: var(--primary);
   }
 }
-
-// .slide-left-enter,
-// .slide-right-leave-active {
-//   opacity: 0;
-//   transform: translate(30px, 0);
-// }
-// .slide-left-leave-active,
-// .slide-right-enter {
-//   opacity: 0;
-//   transform: translate(-30px, 0);
-// }
 
 .page-enter-active, .page-leave-active {
   transition: opacity .5s
@@ -55,13 +50,13 @@ body {
 
 
 .card-about {
-  background-color: #2e3440;
+  background-color: var(--bg-card);
 }
 
 .card-skills{
-  background-color: #3B4252;
+  background-color: var(--bg-secondary);
 }
 
 .footer {
-  background-color: #3B4252;
+  background-color: var(--bg-secondary);
 }
