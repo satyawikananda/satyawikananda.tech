@@ -1,6 +1,8 @@
-# satyawikananda
+# Satya Wikananda
 
-## Build Setup
+Hello there, Satya wikananda here 👋
+
+<!-- ## Build Setup
 
 ```bash
 # install dependencies
@@ -17,4 +19,4 @@ $ yarn start
 $ yarn generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org). -->
