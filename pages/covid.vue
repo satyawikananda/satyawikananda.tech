@@ -59,6 +59,16 @@ export default {
     return {
       data: response
     }
+  },
+  head: {
+    title: 'Satya Wikananda | Covid info',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Data covid information in Indonesia'
+      }
+    ]
   }
 }
 </script>
