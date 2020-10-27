@@ -12,6 +12,9 @@
         <nuxt-link to="/accomplishments" class="mr-5 cursor-pointer text-white-semi hover:underline">
           Accomplishments
         </nuxt-link>
+        <nuxt-link to="/covid" class="mr-5 cursor-pointer text-white-semi hover:underline">
+          Covid info
+        </nuxt-link>
       </nav>
       <div class="flex items-center">
         <social-media :icons="['fab', 'github']" link="https://github.com/satyawikananda" />
