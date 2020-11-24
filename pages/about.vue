@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <section class="text-white body-font">
-      <div class="container mx-auto flex py-2 py-12 items-center justify-center flex-col">
+      <div class="container mx-auto flex py-12 items-center justify-center flex-col">
         <div class="flex flex-wrap justify-center">
           <div class="p-4 lg:w-full">
             <div class="h-full card-about shadow-md px-8 pt-16 pb-20 rounded-lg overflow-hidden relative">
