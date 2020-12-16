@@ -40,12 +40,6 @@ export default {
           hexColor: '#0088CC'
         },
         {
-          id: 2,
-          name: 'Line',
-          link: 'http://line.me/ti/p/~satyawikananda234',
-          hexColor: '#00B900'
-        },
-        {
           id: 3,
           name: 'Instagram',
           link: 'https://instagram.com/satyawikananda',
