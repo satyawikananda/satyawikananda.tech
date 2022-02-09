@@ -8,7 +8,7 @@
             Hi, Satya Wikananda here 👋
           </h1>
           <p class="mb-8 leading-relaxed">
-            Hello there, my full name is <span class="font-bold" :style="{ color: '#ff8906' }">I Gusti Ngurah Satya Wikananda</span>, and people who's know me call me <span class="font-bold" :style="{ color: '#ff8906' }">Satya (19)</span>. For now, I live in Denpasar, Bali and I am working at software house based on Bali as a Web developer. Wanna know about me? click this button below 😊
+            Hello there, my full name is <span class="font-bold" :style="{ color: '#ff8906' }">I Gusti Ngurah Satya Wikananda</span>, and people who's know me call me <span class="font-bold" :style="{ color: '#ff8906' }">Satya ({{ getAge("2001/04/23") }})</span>. For now, I live in Denpasar, Bali and I am working at software house based on Bali as a Web developer. Wanna know about me? click this button below 😊
           </p>
           <div class="flex justify-center">
             <nuxt-link to="/about">
@@ -35,6 +35,20 @@ export default {
         content: 'Hi there, Satya wikananda here, wanna know me? check in here'
       }
     ]
+  },
+  computed: {
+    getAge(dateString) {
+      const today = new Date()
+      const birthDate = new Date(dateString)
+      let age = today.getFullYear() - birthDate.getFullYear()
+      const month = today.getMonth() - birthDate.getMonth()
+
+      if(month < 0 || (month === 0 && today.getDate() < birthDate.getDate())) {
+        age--
+      }
+
+      return age
+    }
   }
 }
 </script>
