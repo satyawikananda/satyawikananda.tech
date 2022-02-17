@@ -1,22 +1,32 @@
-# Satya Wikananda
+# Satya Wikananda's portfolio site
 
-Hello there, Satya wikananda here 👋
+My portfolio website built with Vue.js 3, Vite.js, and TypeScript.
 
-<!-- ## Build Setup
+## Customize configuration
 
-```bash
-# install dependencies
-$ yarn install
+See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+## Project Setup
 
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
+```sh
+pnpm install
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org). -->
+### Compile and Hot-Reload for Development
+
+```sh
+pnpm run dev
+```
+
+### Type-Check, Compile and Minify for Production
+
+```sh
+pnpm run build
+```
+
+### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
+
+```sh
+pnpm run build
+pnpm run test:e2e
+```

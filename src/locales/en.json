@@ -1,0 +1,41 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "project": "Projects"
+  },
+  "home": {
+    "title": "Hi, Satya Wikananda here",
+    "meta": "Hi, I'm Satya Wikananda, a passionate web developer that focus on front-end web development and based on Bali, Indonesia. Nice to meet you",
+    "description": {
+      "first": "Hello there, my full name is",
+      "second": "and people who's know me call me",
+      "third": "For now, I live in Denpasar, Bali and I am working at software house based on Bali as a Web developer. Wanna know about me? click this button below"
+    },
+    "button": "About Me"
+  },
+  "footer": {
+    "description-first": "Built with Vue 3 + Vite + TypeScript",
+    "description-second": "Hosted on Vercel"
+  },
+  "about": {
+    "about": "About",
+    "title": "Hi, Satya Wikananda here",
+    "description": {
+      "first": "Hello there, my full name is",
+      "second": "and people who's know me call me",
+      "third": "For now, I live in Denpasar, Bali and I'm working at software house based on Bali as a Web developer. I'm a vocational high school graduates at",
+      "forth": "with a major in software engineering and now, I'm a college student at",
+      "fifth": "I Love make something that useful for the others like make an application website and I'm prefer in Frontend website development using Vue Js or Nuxt Js, and until now, I'm still learning, because everyday the technologies is continues to develop."
+    },
+    "socialMedia": "My social media account, let's connect with me :",
+    "skill": {
+      "title": "My skills and knowledges",
+      "main": "Main skills",
+      "tools": "Tools & Infrastructures"
+    }
+  },
+  "project": {
+    "title": "My Projects"
+  }
+}
