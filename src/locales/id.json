@@ -1,0 +1,41 @@
+{
+  "navbar": {
+    "home": "Beranda",
+    "about": "Tentang Saya",
+    "project": "Proyek"
+  },
+  "home": {
+    "title": "Hai, Satya Wikananda disini",
+    "meta": "Hai, saya Satya Wikananda, pengembang web yang berfokus pada pengembangan web front-end yang berbasis di Bali, Indonesia. Senang berkenalan dengan Anda",
+    "description": {
+      "first": "Halo semua, perkenalkan nama saya",
+      "second": "dan orang yang mengenal saya memanggil saya",
+      "third": "Sekarang saya tinggal di Denpasar, Bali dan sedang bekerja di salah satu perusahaan software house di Bali sebagai pengembang website. Ingin tahu lebih lanjut tentang saya? klik tombol yang ada di bawah ini"
+    },
+    "button": "Tentang Saya"
+  },
+  "footer": {
+    "description-first": "Dibuat menggunakan Vue 3 + Vite + TypeScript",
+    "description-second": "Dihosting di Vercel"
+  },
+  "about": {
+    "about": "Tentang Saya",
+    "title": "Hai, Satya Wikananda disini",
+    "description": {
+      "first": "Halo semua, perkenalkan nama saya",
+      "second": "dan orang yang mengenal saya memanggil saya",
+      "third": "Sekarang saya tinggal di Denpasar, Bali dan sedang bekerja di salah satu perusahaan software house di Bali sebagai pengembang website. Saya adalah seorang alumni di",
+      "forth": "dengan jurusan Rekayasa Perangkat Lunak dan sekarang saya seorang mahasiswa di Kampus",
+      "fifth": "Saya suka membuat sesuatu yang berguna untuk semua orang seperti membuat aplikasi website dan saya lebih ke bagian frontend dari pengembangan situs menggunakan Vue.js atau Nuxt.js dan sampai sekarang saya masih belajar karena setiap harinya teknologi itu berkembang terus."
+    },
+    "socialMedia": "Ini adalah social media saya, ayo hubungi saya disini: ",
+    "skill": {
+      "title": "Keahlian dan kemampuan saya",
+      "main": "Keahlian utama",
+      "tools": "Alat dan infrastruktur"
+    }
+  },
+  "project": {
+  "title": "Proyek-proyek saya"
+  }
+}
