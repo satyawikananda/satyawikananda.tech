@@ -7,7 +7,8 @@
     "preview": "vite preview --port 5050",
     "test:e2e": "cypress open",
     "typecheck": "vue-tsc --noEmit",
-    "format": "prettier --write './**/*.{vue,js,ts}'"
+    "format": "prettier --write './**/*.{vue,js,ts}'",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
