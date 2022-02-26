@@ -1,7 +1,12 @@
 <script setup lang="ts">
 import { ref, watchEffect } from "vue"
 import { useI18n } from "vue-i18n"
-import { useToggle, onKeyStroke, onClickOutside } from "@vueuse/core"
+import { 
+  useToggle, 
+  onKeyStroke, 
+  onClickOutside, 
+  useStorage 
+} from "@vueuse/core"
 import { RouterLink, useRouter } from "vue-router"
 import { isDark, toggleDark } from "@/composables/dark"
 interface NavbarMenu {
@@ -34,6 +39,11 @@ const toggleLocales = () => {
   const locales = availableLocales
   locale.value = locales[(locales.indexOf(locale.value) + 1) % locales.length]
 }
+const state = useStorage("locale", locale.value)
+
+watchEffect(() => {
+  state.value = locale.value
+})
 
 const dataNavbar: NavbarMenu[] = [
   {
