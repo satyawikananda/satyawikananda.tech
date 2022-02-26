@@ -15,9 +15,14 @@ import "@/assets/style.css"
 import id from "@/locales/id.json"
 import en from "@/locales/en.json"
 
+let lang
+if(window.localStorage) {
+  lang = localStorage.getItem("locale")
+}
+
 const i18n = createI18n({
   legacy: false,
-  locale: "en",
+  locale: lang as string,
   messages: {
     en,
     id,
