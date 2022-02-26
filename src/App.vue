@@ -1,5 +1,15 @@
 <script setup lang="ts">
+import { onMounted } from "vue"
 import { RouterView } from "vue-router"
+
+onMounted(() => {
+  if (window.localStorage) {
+    const locale = localStorage.getItem("locale")
+    if (locale == "en-US") {
+      localStorage.setItem("locale", "en")
+    }
+  }
+})
 </script>
 
 <template>
