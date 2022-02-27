@@ -19,7 +19,7 @@ useHead({
       <img
         class="lg:w-1/4 md:w-2/6 w-3/6 mb-10 w-full h-full object-cover object-center rounded-full"
         alt="hero"
-        src="https://avatars1.githubusercontent.com/u/33148052?v=4"
+        src="https://yhclghathylvwpslsenl.supabase.in/storage/v1/object/sign/portfolio/142396194_3671723486268036_1816571119795484043_n.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwb3J0Zm9saW8vMTQyMzk2MTk0XzM2NzE3MjM0ODYyNjgwMzZfMTgxNjU3MTExOTc5NTQ4NDA0M19uLmpwZyIsImlhdCI6MTY0NTk0Mzc4NCwiZXhwIjoxOTYxMzAzNzg0fQ.7bZTuFPuZ0M5pzqVBuU6wV83gDxcjkDjCgg1HZMdFKo"
       />
       <div class="text-center lg:w-2/3 w-full">
         <h1 class="font-bold text-dark-repulser-400 sm:text-4xl text-3xl mb-4 text-center">
@@ -96,11 +96,13 @@ useHead({
   <div
     class="w-11/12 md:w-11/12 lg:w-full h-full mx-auto mb-10 shadow bg-light-50 dark:bg-elucidator-800 py-12 p-8 rounded-lg"
   >
-    <h1 class="text-dark-repulser-500 font-bold text-xl sm:text-3xl">{{ t("about.skill.title") }}</h1>
+    <h1 class="text-dark-repulser-500 font-bold text-xl sm:text-3xl">
+      {{ t("about.skill.title") }}
+    </h1>
     <span class="text-lg text-dark-repulser-500 mt-5 font-semibold">{{
       t("about.skill.main")
     }}</span>
-    <div class="inline-grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-5 mb-5 gap-10">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-5 mb-5 gap-10">
       <div
         v-for="(skill, i) in skills"
         :key="i"
@@ -115,7 +117,7 @@ useHead({
     <span class="text-lg text-dark-repulser-500 mt-5 font-semibold">{{
       t("about.skill.tools")
     }}</span>
-    <div class="inline-grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-5 gap-10">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-5 gap-10">
       <div
         v-for="(sideSkill, i) in sideSkills"
         :key="i"
@@ -126,6 +128,16 @@ useHead({
           {{ sideSkill.name }}
         </p>
       </div>
+      <!-- <div
+        v-for="(skill, i) in skills"
+        :key="i"
+        class="shadow bg-light-300 dark:bg-elucidator-700 rounded p-5 flex flex-col items-center main-skills"
+      >
+        <div v-html="skill.svg" />
+        <p class="text-center text-dark-repulser-700 dark:text-[#ddd] font-medium mt-2">
+          {{ skill.name }}
+        </p>
+      </div> -->
     </div>
   </div>
 </template>
