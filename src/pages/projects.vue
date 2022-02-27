@@ -64,6 +64,7 @@ useSupabase("projects").then(({ data, error }) => {
             rel="noreferrer"
             :title="'github of ' + project?.name"
             class="mr-3"
+            v-if="project?.github"
           >
             <uil-github
               class="text-2xl flex cursor-pointer text-elucidator-700 dark:text-dark-repulser-400"
