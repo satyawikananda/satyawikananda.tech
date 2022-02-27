@@ -12,7 +12,8 @@
       "second": "and people who's know me call me",
       "third": "For now, I live in Denpasar, Bali and I am working at software house based on Bali as a Web developer. Wanna know about me? click this button below"
     },
-    "button": "About Me"
+    "button": "About Me",
+    "credit": "Profile picture created by"
   },
   "footer": {
     "description-first": "Built with Vue 3 + Vite + TypeScript",

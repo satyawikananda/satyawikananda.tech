@@ -12,7 +12,8 @@
       "second": "dan orang yang mengenal saya memanggil saya",
       "third": "Sekarang saya tinggal di Denpasar, Bali dan sedang bekerja di salah satu perusahaan software house di Bali sebagai pengembang website. Ingin tahu lebih lanjut tentang saya? klik tombol yang ada di bawah ini"
     },
-    "button": "Tentang Saya"
+    "button": "Tentang Saya",
+    "credit": "Foto profil dibuat oleh"
   },
   "footer": {
     "description-first": "Dibuat menggunakan Vue 3 + Vite + TypeScript",
